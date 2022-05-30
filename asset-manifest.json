@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/framer-motion-scroll-to-hook/static/css/main.18deb417.chunk.css",
+    "main.js": "/framer-motion-scroll-to-hook/static/js/main.b6dacd4a.chunk.js",
+    "main.js.map": "/framer-motion-scroll-to-hook/static/js/main.b6dacd4a.chunk.js.map",
+    "runtime-main.js": "/framer-motion-scroll-to-hook/static/js/runtime-main.747c43fa.js",
+    "runtime-main.js.map": "/framer-motion-scroll-to-hook/static/js/runtime-main.747c43fa.js.map",
+    "static/js/2.8bcc53dc.chunk.js": "/framer-motion-scroll-to-hook/static/js/2.8bcc53dc.chunk.js",
+    "static/js/2.8bcc53dc.chunk.js.map": "/framer-motion-scroll-to-hook/static/js/2.8bcc53dc.chunk.js.map",
+    "index.html": "/framer-motion-scroll-to-hook/index.html",
+    "precache-manifest.77a95bbf50e68688ae48f9ae232157e4.js": "/framer-motion-scroll-to-hook/precache-manifest.77a95bbf50e68688ae48f9ae232157e4.js",
+    "service-worker.js": "/framer-motion-scroll-to-hook/service-worker.js",
+    "static/css/main.18deb417.chunk.css.map": "/framer-motion-scroll-to-hook/static/css/main.18deb417.chunk.css.map",
+    "static/js/2.8bcc53dc.chunk.js.LICENSE.txt": "/framer-motion-scroll-to-hook/static/js/2.8bcc53dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.747c43fa.js",
+    "static/js/2.8bcc53dc.chunk.js",
+    "static/css/main.18deb417.chunk.css",
+    "static/js/main.b6dacd4a.chunk.js"
+  ]
+}
