@@ -16,11 +16,15 @@ yarn add framer-motion-scroll-to-hook
 
 ## Usage
 
-useScrollTo hook accepts 1 argument a that is framer-motion config: 
+useScrollTo hook accepts 1 argument a that is framer-motion config:
+
+    1: Spring | Tween | undefined
+        
+
 scrollTo function returned from useScrollTo hook accepts 2 arguments:
 
-    1: Element | string | number (number of pixels from top of the window)
-    2: Number (offset in pixels from element you want to scroll to)
+    1: Element | string | number (number of pixels from top of the window) | undefined
+    2: Number (offset in pixels from element you want to scroll to) | undefined
 
 
 ## Examples
