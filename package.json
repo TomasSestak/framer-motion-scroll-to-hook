@@ -1,6 +1,6 @@
 {
 	"name": "framer-motion-scroll-to-hook",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"description": "useScrollToHook for Framer Motion animation library",
 	"author": "TomasSestak",
 	"license": "MIT",
@@ -8,6 +8,9 @@
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"engines": {
 		"node": ">=8",
 		"npm": ">=5"
