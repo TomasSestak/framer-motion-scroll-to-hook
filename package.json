@@ -1,24 +1,19 @@
 {
 	"name": "framer-motion-scroll-to-hook",
-	"version": "2.0.1",
+	"version": "2.0.3",
 	"description": "useScrollToHook for Framer Motion animation library",
 	"author": "TomasSestak",
 	"license": "MIT",
 	"repository": "TomasSestak/framer-motion-scroll-to-hook",
-	"main": "dist/cjs/index.js",
-	"module": "dist/es/index.js",
+	"main": "dist/index.js",
+	"module": "dist/index.es.js",
 	"types": "dist/index.d.ts",
-	"jsnext:main": "dist/index.es.js",
 	"engines": {
 		"node": ">=8",
 		"npm": ">=5"
 	},
 	"scripts": {
-		"test": "cross-env CI=1 react-scripts test --env=jsdom",
-		"test:watch": "react-scripts test --env=jsdom",
-		"build": "rollup -c && tsc -d --emitDeclarationOnly --noEmit false --declarationDir dist",
-		"start": "rollup -c -w",
-		"prepare": "yarn run build",
+		"build": "tsc",
 		"predeploy": "cd example && yarn install && yarn run build",
 		"deploy": "gh-pages -d example/build"
 	},
@@ -28,22 +23,8 @@
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
 		"@babel/runtime": "^7.3.1",
-		"@rollup/plugin-babel": "^6.0.3",
-		"@rollup/plugin-commonjs": "^25.0.4",
-		"@rollup/plugin-node-resolve": "^15.2.1",
-		"@rollup/plugin-typescript": "^11.1.2",
-		"@rollup/plugin-url": "^8.0.1",
-		"@testing-library/react-hooks": "^8.0.1",
-		"@types/jest": "^29.5.4",
-		"@types/react": "^18.2.21",
-		"cross-env": "^7.0.3",
 		"gh-pages": "^6.0.0",
 		"react": "^18.2.0",
-		"react-scripts": "^5.0.1",
-		"react-test-renderer": "^18.2.0",
-		"rollup": "^3.28.1",
-		"rollup-plugin-peer-deps-external": "^2.2.0",
-		"tslib": "^2.0.1",
 		"typescript": "^5.2.2"
 	},
 	"dependencies": {
