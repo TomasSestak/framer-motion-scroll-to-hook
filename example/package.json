@@ -1,14 +1,14 @@
 {
   "name": "framer-motion-scroll-to-hook-example",
   "homepage": "https://TomasSestak.github.io/framer-motion-scroll-to-hook",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "framer-motion-scroll-to-hook": "link:..",
     "react": "link:../node_modules/react",
-    "react-dom": "^16.9.0",
-    "react-scripts": "^3.0.1"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,6 +23,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "typescript": "^4.7.2"
+    "typescript": "^5.2.2"
   }
 }
