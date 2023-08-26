@@ -1,4 +1,4 @@
-import {animate, Spring, Tween} from 'framer-motion';
+import {Spring, Tween} from 'framer-motion';
 
 export const useScrollTo = (transition?: Spring | Tween) => {
 	let isStopped = false;
@@ -8,7 +8,7 @@ export const useScrollTo = (transition?: Spring | Tween) => {
 		window.removeEventListener('wheel', onWheel);
 	};
 
-	const scrollTo = (target?: Element | number | string | null, offset: number = 0) => {
+	const scrollTo = async (target?: Element | number | string | null, offset: number = 0) => {
 		let y = 0;
 
 		if (typeof target === 'number') {
@@ -27,6 +27,7 @@ export const useScrollTo = (transition?: Spring | Tween) => {
 		y += offset;
 
 		window.addEventListener('wheel', onWheel);
+		const {animate} = await import('framer-motion');
 		animate(window.scrollY, y, {
 			...transition,
 			onComplete: () => {
@@ -53,7 +54,7 @@ interface ScrollToProps {
 }
 
 
-export const scrollTo = async ({ scroller = window, transition, target, offset = 0 }: ScrollToProps | undefined = {}) => {
+export const scrollTo = async ({scroller = window, transition, target, offset = 0}: ScrollToProps | undefined = {}) => {
 	if (typeof window === 'undefined' || !scroller) {
 		return;
 	}
@@ -86,7 +87,7 @@ export const scrollTo = async ({ scroller = window, transition, target, offset =
 	y += offset;
 
 	scroller.addEventListener('wheel', onWheel);
-	const { animate } = await import('framer-motion');
+	const {animate} = await import('framer-motion');
 	animate(scrollY, y, {
 		...transition,
 		onComplete: () => {
