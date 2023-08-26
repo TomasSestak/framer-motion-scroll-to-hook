@@ -1,6 +1,6 @@
 {
 	"name": "framer-motion-scroll-to-hook",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"description": "useScrollToHook for Framer Motion animation library",
 	"author": "TomasSestak",
 	"license": "MIT",
